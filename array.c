@@ -17,8 +17,10 @@ int main() {
 
     int choice, search, temp, index;
     while(1){
+        system("cls");
         printf("\nPlease select from the options:\n\t0 find(x)\n\t1 find_kth(k)\n\t2 insert(x,i)\n\t3 remove(x)\n\t4 print_list()\n\t5 exit\n");
         scanf("%d", &choice);
+        system("cls");
         switch(choice) {
             case 0: 
             //find(x)
@@ -30,6 +32,8 @@ int main() {
                 } else {
                     printf("%d is at index %d.", search, temp);
                 }
+                printf("\n");
+                system("pause");
                 break;
 
             case 1: 
@@ -41,8 +45,9 @@ int main() {
                 } else {
                     temp = find_kth(search);
                     printf("The value of the element in the index of %d is %d.", search, temp);
-                    
                 }
+                printf("\n");
+                system("pause");
                 break;
                 
             case 2: 
@@ -63,7 +68,8 @@ int main() {
 
                 printf("%d inserted successfully at index %d.",search, temp);
                 
-                
+                printf("\n");
+                system("pause");
                 break;
 
             case 3: 
@@ -76,11 +82,17 @@ int main() {
                 } else {
                     printf("%d at index %d has been removed.", search, temp);
                 }
+                
+                printf("\n");
+                system("pause");
                 break;
 
             case 4: 
             //print_list()
                 print_list();
+                
+                printf("\n");
+                system("pause");
                 break;
 
             case 5: //exit
